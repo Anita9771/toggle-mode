@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  height: 100vh;
+  margin: 0;
+  transition: 1s ease;
+  background-color: yellow;
+}
+
+body.moon{
+  background-color: orange;
+}
+
+.label{
+  border: 2px solid black;
+  width: 4em;
+  height: 2em;
+  display: flex;
+  background-color: black;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: .2em;
+  position: relative;
+
+}
+
+.bxs-moon{
+  color: orange;
+}
+
+.bxs-sun{
+  color: yellow;
+}
+
+.cover{
+  background-color: orange;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  border-radius: 50%;
+  transition: transform .5s linear;
+}
+
+.toggle{
+  /* border: 2px solid; */
+  margin-left: 80vw;
+  width: 25wv;
+  height: 50vh;
+  margin-top: 10px;
+}
+
+.checkbox{
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox:checked + .label .cover{
+  background-color: yellow;
+  transform: translate(36px);
+}
+
